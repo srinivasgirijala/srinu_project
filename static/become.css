@@ -1,0 +1,26 @@
+h1{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(57,81,255,1) 0%, rgba(239,0,255,1) 100%);
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    border-radius: 1vh;
+}
+h4{
+    color: rgb(0, 38, 255);
+}
+p{
+text-align: justify;
+}
+#hu{
+    height: 97%;
+    width: 90%;
+    margin-left: 3vh;
+ 
+}
+.demo5{
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    background-color: rgb(20, 20, 20);
+    color: white;
+}

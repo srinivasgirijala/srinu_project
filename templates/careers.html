@@ -1,0 +1,96 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link type="text/css"rel="stylesheet"href="{% static 'careers.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <h1> NASA CAREERS</h1>
+        </div>
+    </div>
+      <marquee>
+        <img src="{% static 'images/amer.jpg'%}"class="img-fluid"width=25px> <h5> NASA ACADEMY</h5>
+      </marquee>
+                 <div id="ty">
+                     <div class="container">
+                           <div class="row">
+                                <center>  
+                                    <h2>Note:</h2>
+                                    <p>If you are showing interest to work with nase projects please apply on below application form we will reach you with in 24 hrs after applied the form</p>
+                                    <p>Can directly contact with Email:</p>
+                                    <p>srinivasgirijala777@gmail.com</p>
+                                </center> 
+                           </div>
+                      </div>
+                 </div>
+      <form action="careers"method="POST">
+          {% csrf_token %}
+           <div class="container-fluid">
+                <h5>First Name:</h5>
+                <input type="text"name="firstname" class="aq"placeholder=" Enter First Name"required><br><br>
+                <h5>Last Name:</h5>
+                <input type="text" name="lastname"class="aq"placeholder=" Enter Last Name"required><br><br>
+                <h5>Phone Number:</h5>
+                <input type="tel" name="phonenumber"class="aq"placeholder=" Enter Phone Number"required><br><br>
+                <h5>Email:</h5>
+                <input type="email" name="email"class="aq"placeholder="Enter Email"required><br><br>
+    
+                <h5>State/region:</h5>
+                <input type="text"name="state" class="aq"placeholder=" Enter state"required><br><br>
+                <h5> Home Address:</h5>
+                <input type="text" name="address"name="address" placeholder="Enter Address"required><br><br>
+                <h5>Gender:</h5>
+                 <input list="Gender" name="Gender"placeholder="Select Gender"required><br><br>
+                 <datalist id="Gender">
+                   <option value="Male">
+                   <option value="Female">
+                   <option value="Others">
+                 </datalist>
+                 
+                 <h5>Preferred Location:</h5>
+                 <input list="location" name="location" id="browser"placeholder="select location"required><br><br>
+               <datalist id="location">
+                 <option value="Hyderabad">
+                 <option value="Chennai">
+                 <option value="Bangalore">
+                 <option value="Pune">
+                 <option value="Kolkata">
+               </datalist>
+               
+               <h5>Skills:</h5>
+               <input list="skills" name="skills" placeholder="Select skills"required><br><br>
+                <datalist id="skills">
+                    <option value="C language">
+                    <option value="Full Stack Python"> 
+                    <option value="Full Stack Java">
+                    <option value=".Net">
+                    <option value="Sales Force">
+                    <option value="others">
+                </datalist>
+               
+                <h5>Cover Letter:</h5>
+                <textarea id="df"cols="100" name="textarea">Write Here</textarea>
+                <br>
+                  <center> <input type="submit"></center>
+           </div>
+          
+      </form>
+       
+      
+  
+  
+    
+  
+  <div class="djd">
+    copyright &copy; 2021 Project Session  </div>
+</body>
+</html>

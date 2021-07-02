@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+   <link type="text/css"rel="stylesheet"href="{% static 'login.css'%}">
+   <title>Login</title>
+</head>
+<body>
+ 
+  <h1 class="container">LOGIN HERE</h1>
+ 
+<form action="login"method="POST">
+         {% csrf_token %}
+      <div class="d"container-fluid>
+       <div class="vb"col-md-6>
+         <marquee>
+            <img src="{% static 'images/amer.jpg'%}"class="img-fluid"width=35px> <h5> NASA ACADEMY</h5>
+          </marquee>
+           <div class="lo">EMAIL:</div>
+           <input type="email" name="email"placeholder="Enter Email"required><BR><br>
+            <div class="lo"> PASSWORD:</div>
+           <input type="password" name="password"placeholder="Enter Password"required><br>
+           <center><button type="submit">login</button></center>
+       </div>
+      </div>
+   {% for message in messages %}
+   {{message}}
+   {% endfor %}
+
+</form>
+</body>
+</html>

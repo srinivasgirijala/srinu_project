@@ -1,0 +1,32 @@
+h1{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(57,81,255,1) 0%, rgba(239,0,255,1) 100%);
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    border-radius: 1vh;
+}
+.de{
+    margin-top: 19vh;
+}
+
+H2{
+        font-size: 6rem;
+        background: linear-gradient(45deg, #5c00f1, #003cff);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
+}
+
+p{
+    text-align: justify;
+}
+.njk{
+    background-color: rgb(46, 46, 46);
+    color:white ;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 20px;
+   
+}

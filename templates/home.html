@@ -1,0 +1,208 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link type="text/css"rel="stylesheet"href="{% static 'home.css'%}">
+    <title>Document</title>
+</head>
+<body>
+    
+      <style class="img-fluid">
+        #ok{
+            background-image: url("{% static 'images/hy.jpg'%}");
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            background-repeat: no-repeat;                     
+            background-size: cover;          
+            height: 67vh;
+            overflow-y: hidden;
+            background-position:center;
+            image-rendering: crisp-edges;      
+          }
+       </style>
+        <div id="ok">
+            <div class="container-fluid">
+                <div class="row">
+                        <ul class="nav justify-content-end">
+                          <li class="nav-item">
+                            <a class="nav-link" href="accounts/About"style="color:yellow">About</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="accounts/careers"style="color:yellow">careers</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="accounts/contact"style="color:yellow">Contact</a>
+                          </li>
+                        </ul>
+                           <div class="vb">
+                               <div class="im">
+                                  <img src="{% static 'images/amer.jpg'%}"class="img-fluid"width="7%"height="4px">
+                               </div>
+                               <h1 class="title"col-md-6>USA <span> NASA </span>SPACE ACADEMY </h1>
+                               <P class="paragraph"col-sm-6>These educational events – sponsored by the Johns Hopkins Applied Physics Laboratory and the Discovery.</P>  
+                         
+                                
+                               <br>
+                            </div>
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md">
+                          {% if request.session.email %}
+                          <font color="white">{{request.session.email}}</font> &nbsp;&nbsp; 
+                          <b><a href="accounts/logout">logout</a></b> 
+                          {% else %}
+                          <b>
+                           <a class ="same"href="accounts/register">Register Here</a>   
+                           <a class ="opp"href="accounts/login">Login Page</a>
+                          </b><br><br>
+                          {% endif %}
+                        </div>
+                      </div>
+                    </div>     
+                </div>
+            </div>
+        </div>
+   <br>
+
+       <marquee>
+         <img src="{% static 'images/amer.jpg'%}"class="img-fluid"width=35px> <h5 style="color:rgb(0, 0, 0)"> NASA ACADEMY</h5>
+       </marquee>
+
+          <div class="container">
+                   <div class="row">
+                                 <div class="col-sm-3">
+                                    <div class="card">
+                                       <div class="card-body bg-warning bg-gradient">
+                                            <div class="card-title">
+                                                   <h6> WHEN NASA ACADEMY STARTED</h6>
+                                                <div class="card-text">
+                                                   <p>click For Details </p>     
+                                                   <a href="accounts/created"class="btn btn-primary">Click Here..</a>
+                                                 </div>
+                                            </div> 
+                                       </div>
+                                    </div>
+                                 </div>
+                                       <div class="col-sm-3">
+                                         <div class="card">
+                                             <div class="card-body bg-primary">
+                                                <div class="card-title text-white">
+                                                       <h6>HOW TO BECOME ASTRONAUT</h6>
+                                                    <div class="card-text">
+                                                        <p>click For Details </p>     
+                                                        <a href="accounts/become"class="btn btn-light">Click Here..</a>
+                                                    </div>
+                                                </div> 
+                                             </div>
+                                         </div>
+                                       </div>
+                                  <div class="col-sm-3">
+                                       <div class="card">
+                                          <div class="card-body bg-info bg-gradient">
+                                             <div class="card-title">
+                                                 <h6>ASTRONAUTS TRAINING</h6>
+                                               <div class="card-text">
+                                                 <p>click For Details </p>     
+                                                 <a href="accounts/training"class="btn btn-primary">Click Here..</a>
+                                               </div>
+                                             </div> 
+                                          </div>
+                                       </div>
+                                   </div>
+                                 <div class="col-sm-3">
+                                    <div class="card">
+                                         <div class="card-body bg-danger bg-gradient">
+                                            <div class="card-title text-white">
+                                               <h6>SPACE FLIGHT TECHNOLOGIES</h6>
+                                              <div class="card-text">
+                                                <p>click For Details </p>     
+                                                <a href="accounts/technologies"class="btn btn-primary">Click Here..</a>
+                                             </div>
+                                           </div> 
+                                         </div>
+                                     </div>
+                                  </div>
+                  </div>
+          </div>
+
+
+
+
+          <br><br><br>
+    <div id="ui">
+        <div class="contianer">
+          <div class="row">
+            <div class="col-md">
+              <center>  <video width="70%"height="100%"controls autoplay>
+               <source src="{% static 'images/btg.mp4'%}">
+               </video></center>
+              </div>
+            </div>
+        </div>
+    </div>
+    <br>
+   
+      <div id="nju">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <a class="mju"href="#">yup</a>
+              <p class="bgh">started the registeration</p>
+              <p class="dv">FIX YOUR LITTLE PROBLEM AND LIGHT THIS CANDLE....</p>
+             <p class="m">Students must demonstrate that their work is original and that only students were part of the design process from beginning to end. The faculty advisor is responsible for verifying that the work is original, done entirely by the students, and is free of plagiarism. A letter with this information is required with the entry files.
+
+              Papers found to have plagiarized material will automatically be disqualified.
+              
+              A summary of a thorough literature review is required and should become the foundation of the design paper.
+              
+              Student submissions shall be treated as being free of restrictions and limitations on their use, reproduction, and publication.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+    <br>
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <center><a class="mo"href="#">Discover More ></a>
+              <a class="om"href="#">Membership</a></center>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <Br> <Br> <Br>
+      <div  class="container">
+        <div class="row">
+          <div class="col-md">
+            <center>
+         <h5><i class="fa fa-check"id="dty"></i> Engineering.</h5>
+  
+         <h5><i class="fa fa-check"id="dty"></i> Statistics & Data Analysis.</h5>
+    
+         <h5><i class="fa fa-check"id="dty"></i>  Health & Society. Food & Nutrition. .</h5>
+         
+         <h5><i class="fa fa-check"id="dty"></i> Economics & Finance. Marketing & Communication.</h5>
+          
+            <h5><i class="fa fa-check"id="dty"></i> Art and Culture. Art, Architecture & Design. Music, Film & Audio.</h5> 
+          </center> 
+          
+           
+          </div>
+        </div>
+      </div>
+      <br>  <br>  
+      <div class="njk">
+        copyright &copy; 2021 practise session
+     </div>
+  </body>
+</html>
+

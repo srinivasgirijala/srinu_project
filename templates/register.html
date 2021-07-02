@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+ 
+    <link type="text/css"rel="stylesheet"href="{% static 'register.css'%}">
+    <title>Register</title>
+</head>
+<body>
+         <h1 class="container"> REGISTERATION FORM</h1>
+
+
+
+    <div class="rd"container-fluid>
+      <div class="vb">
+         <form action="register"method="POST">
+                 {% csrf_token %}
+                 <marquee>
+                  <img src="{% static 'images/amer.jpg'%}"class="img-fluid"width=35px> <h5> NASA ACADEMY</h5>
+                </marquee>
+                 <br> <h6>USERNAME:</h6>
+                 <input type="text"name="username"placeholder="Enter Username"required> <br><br>
+                 <h6>EMAIL:</h6>
+                 <input type="email"name="email"placeholder="@gmail.com"required><br><br>
+              <h6>PASSWORD:</h6>
+              <input type="password"name="password"placeholder="Enter Password"required><br><br>
+              <h6>PHONE NUMBER:</h6>
+              <input type="Phonenumber"name="phonenumber"placeholder="Enter 10 Digits Number"><br><br>
+              <center><button type="submit">Register</button><br></center>
+    
+              {% for message in messages %}
+              {{message}}
+              {% endfor %}<br>
+              <a class="ty"href="login">login-></a>     <span>If you have already registered</span>
+         </form>
+     </div>
+  </div>
+</body>
+</html>
+
+

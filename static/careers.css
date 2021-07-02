@@ -1,0 +1,66 @@
+h1{
+    border-radius: 22px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: sans-serif;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(35,255,0,1) 0%, rgba(106,249,255,1) 100%);
+    font-size: 40px;
+    margin-top: 2vh;
+    font-weight: bolder;
+    padding: 1vh;
+}
+#ty{
+    background-color: #a4508b;
+    background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+    color: white;
+    font-family: sans-serif;
+    margin-bottom: 3vh;
+    border-radius: 3vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+h2{
+    text-decoration: underline;
+    
+}
+p{
+    text-transform: capitalize;
+}
+input[type=text],input[type=tel],input[type=email]{
+    width: 100%;
+    height: 5vh;
+}
+input[list=location],input[list=Gender],input[list=skills]{
+    width: 40%;
+    height: 5vh;
+}
+input[type=submit]{
+    padding: 1vh;
+    width: 130px;
+    background-color: rgba(56, 0, 241, 0.945);
+    color: white;
+    border-color: rgba(56, 0, 241, 0.945);
+    font-weight: bold;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+}
+.djd{
+    color: white;
+    background-color: rgb(34, 34, 34);
+    text-align: center;
+    font-family: sans-serif;
+}
+
+@media screen and (max-width:700px){
+    h1{
+        font-size: 25px;
+        
+    }
+    input[list=location],input[list=Gender],input[list=skills]{
+        width: 70%;
+        height: 5vh;
+    }
+  #df{
+      width: 60%;
+  }
+}

@@ -1,0 +1,26 @@
+h1{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(57,81,255,1) 0%, rgba(239,0,255,1) 100%);
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    border-radius: 1vh;
+}
+h4{
+    text-align: center;
+    color: rgb(19, 23, 255);
+    text-decoration: underline;
+}
+p{
+    text-align: justify;
+}
+#dzz{
+    width: 50%;
+}
+#dvb{
+    width: 35%;
+}
+.njk{
+    background-color: rgb(36, 36, 36);
+    color: white;
+    text-align: center;
+}
